@@ -17,11 +17,11 @@ pipeline {
        // }
 
         // This stage is named "Build". It has two steps:
-        // 1. build 'PES2UG19CS159-1' - This step is likely calling another Jenkins job or pipeline named 'PES2UG19CS159-1'.
+        // 1. build 'PES2UG19CS694-1' - This step is likely calling another Jenkins job or pipeline named 'PES2UG19CS694-1'.
         // 2. sh 'g++ main.cpp -o output' - This step builds the code using the g++ compiler. The 'main.cpp' file is compiled into an executable named 'output'.
         stage('Build') {
             steps {
-                build 'PES1UG21CS531-1'
+                build 'PES1UG21CS694-1'
                 sh 'g++ main.cpp -o output'
             }
         }
